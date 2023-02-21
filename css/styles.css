@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+   background-color: #eafcc4;
+}
+
+.img-banner{
+    height: 50vh;
+    width: 100vw;
+    margin-right: 50px;
+}
+
+.img-banner2{
+    height: 50vh;
+    width: 100vw;
+    margin-right: 50px;
+    border: 3px solid red;
+    margin: auto;
+
+    background-size: 100% 100%;
+
+    animation:img-banner2 10s infinite;
+}
+
+@keyframes img-banner2{
+    0%{
+        background-image: url(img/Banner_publicitario_para_marca_de_ropa_estilo_urbano.png)
+    }
+    35%,65%{
+        background-image: url(
+            img/banner-descuento.jpg)
+    }
+    70%,100%{
+        background-image: url(
+            img/img/banner-artemisa.png)
+    }
+}
+
+main{
+    background-color: #eafcc4;
+
+}
+
+nav{
+    width: 90%;
+    height: 70px;
+    margin:0 auto;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul a{
+    color: white;
+    text-decoration: none;
+    padding: .7rem;
+}
+
+ul ul{
+    position: absolute;
+    display: none;
+    padding: 20px;
+    margin: 5px;
+}
+
+ul li:hover ul{
+    display: block;
+    background-color: pink;
+}
+
+nav ul a:hover{
+    background-color: orange;
+    color:blue;
+    border-radius: 20px;
+}
+
+.fotos-main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+
+.imgfotos{
+    height: 300px;
+    width: 300px;
+    margin-right: 200px;
+    opacity: .4;
+    border: gray 2px double;
+    border-radius: 10px;
+    justify-content: center;
+    margin: 0% auto;
+}
+
+.imgfotos:hover{
+    opacity: 1;
+    border: white solid 2px;
+}
+
+
+footer{
+    background-color: #eafcc4;
+}
+
+.footer-inicio{
+    width: 200px;
+    height: 200px;
+    color: red;
+}
