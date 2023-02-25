@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="shortcut icon" href="../img/Artemisa Indumentaria Deportiva.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Artemisa Indumentaria Deportiva</title>
@@ -11,31 +12,39 @@
 <body>
     <header>
         <img class="img-banner" src="../img/banner-artemisa.png" alt="banner-artemisa">    
-        
-        <nav>
-            <ul class="menu">
-                <input class="js-search-input form-control small search-input" autocomplete="off" type="search" name="q" placeholder="Buscar" aria-d="Buscador">
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="../pages/historia.html">Nuestra Historia</a>
-                </li>
-                <li>
-                    <a href="../pages/galeriadeimagenes.html">Galeria de Imagenes</a>
-                    <ul>
-                        <li><a href="women">mujer</a></li>
-                        <li><a href="men">hombre</a></li>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/historia.html">Nuestra Historia</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Otras Secciones
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../pages/galeriadeimagenes.html">Galeria de Imagenes</a></li>
+                      <li><a class="dropdown-item" href="../pages/ubicacion.html">Ubicacion</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="../pages/contacto.html">Contacto</a></li>
                     </ul>
-                </li>
-                <li>
-                    <a href="../pages/ubicacion.html">Ubicacion</a>
-                </li>
-                <li>
-                    <a href="../pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+                  </li>                      
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     </header>
   
     <main class="fotos-main">
@@ -64,7 +73,6 @@
         <p> soy un footer </p>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat laborum numquam ex iure soluta, vel mollitia in temporibus repellat dolorem. Rerum sunt molestiae, debitis maxime necessitatibus, nesciunt repudiandae, voluptas officia excepturi possimus quis dicta sed? Adipisci quia, consequuntur sapiente dolores pariatur ducimus, itaque obcaecati, placeat fuga quae esse dolore ipsa minima cumque quaerat excepturi dolor necessitatibus molestias enim. Dolores laboriosam officiis suscipit, enim cum aspernatur eum, dolorem eos beatae error placeat nesciunt obcaecati, fugiat quam accusantium pariatur! Odio quo ipsam incidunt qui est quod quaerat architecto doloremque, facilis, fugiat dolor. Earum culpa velit cum voluptatibus soluta dolor minus maxime eveniet eum vel. Accusamus dolor sapiente eveniet ex animi non, sint assumenda aspernatur recusandae omnis voluptatum provident fuga doloribus deserunt suscipit quia, ab ipsam fugit harum est repellat obcaecati repellendus aliquam voluptatibus? Mollitia deleniti earum provident quo adipisci illo. Qui, inventore. Ipsa, aliquid, deserunt molestias reiciendis unde optio ipsam ab alias nemo saepe dicta iusto, enim ducimus expedita praesentium eveniet recusandae. Deleniti quis repellat est, maxime voluptatum quae. Est autem doloribus blanditiis illum labore minus velit. Quasi nulla earum impedit quos reprehenderit aliquam excepturi porro cupiditate saepe amet odio quia labore voluptatem nobis, dolore in ex mollitia ipsa eveniet fugit nam!</p>
     </footer>
-
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
 </body>
 </html>

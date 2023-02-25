@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/Artemisa Indumentaria Deportiva.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Artemisa Indumentaria Deportiva</title>
@@ -13,50 +14,68 @@
         <div>
             <img class="img-banner" src="../img/banner-artemisa.png" alt="banner-artemisa">
         </div>
-        <nav>
-            <ul class="menu">
-                <input class="js-search-input form-control small search-input" autocomplete="off" type="search" name="q" placeholder="Buscar" aria-label="Buscador">
-                
-                <button type="submit" class="search-input-submit" value="Buscar" aria-label="Buscar">
-                    <svg class="svg-inline--fa svg-icon-text" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M508.5 481.6l-129-129c-2.3-2.3-5.3-3.5-8.5-3.5h-10.3C395 312 416 262.5 416 208 416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c54.5 0 104-21 141.1-55.2V371c0 3.2 1.3 6.2 3.5 8.5l129 129c4.7 4.7 12.3 4.7 17 0l9.9-9.9c4.7-4.7 4.7-12.3 0-17zM208 384c-97.3 0-176-78.7-176-176S110.7 32 208 32s176 78.7 176 176-78.7 176-176 176z"></path></svg>        </button>
-                <li>
-                    <a href="./index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./pages/historia.html">Nuestra Historia</a>
-                </li>
-                <li>
-                    <a href="./pages/galeriadeimagenes.html">Galeria de Imagenes</a>
-                    <ul class="submenu">
-                        <li>
-                            <a href="./pages/galeriadeimagenes.html">mujer</a>
-                        </li>
-                        <li>
-                            <a href="./pages/galeriadeimagenes.html">hombre</a>
-                        </li>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pages/historia.html">Nuestra Historia</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Otras Secciones
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="./pages/galeriadeimagenes.html">Galeria de Imagenes</a></li>
+                          <li><a class="dropdown-item" href="./pages/ubicacion.html">Ubicacion</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="./pages/contacto.html">Contacto</a></li>
+                        </ul>
+                      </li>                      
                     </ul>
-                </li>
-                <li>
-                    <a href="./pages/ubicacion.html">Ubicacion</a>
-                </li>
-                <li>
-                    <a href="./pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+                    <form class="d-flex" role="Buscador">
+                      <input class="form-control me-2" type="Buscador" placeholder="Buscador" aria-label="Buscador">
+                      <button class="btn btn-outline-success" type="submit">Buscador</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
     </header>
     <main>
 
         <section>
-           
-            <h1>inicio</h1>
+          <div id="carouselExampleAutoplaying" class="carousel slide w-100 h-50 m-auto" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/1.jpg"  width=1580px
+                height=500px class="d-block alt="img">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/2.jpg" class=" carrusel-img d-block w-100" alt="img2">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/3.jpg" class=" carrusel-img d-block w-100" alt="img3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt et molestiae, soluta perspiciatis nesciunt obcaecati necessitatibus consectetur non voluptatibus voluptate ducimus quidem sint excepturi unde ipsam voluptates at iusto veniam?</p>
-            
-            <div>
-            <img class="img-banner2" src="img/Banner publicitario para marca de ropa estilo urbano.png" alt="">
-            </div>
-
+          
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum minima ab magnam enim deserunt accusamus quaerat, blanditiis consectetur maiores unde quae exercitationem sunt officiis dicta porro in totam. Nemo, reprehenderit.</p>
             
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam perferendis recusandae ipsum commodi animi ab laboriosam neque, provident possimus nisi, quasi, deleniti non voluptas. Corrupti iste provident pariatur neque reiciendis?</p>
@@ -76,5 +95,6 @@
             
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

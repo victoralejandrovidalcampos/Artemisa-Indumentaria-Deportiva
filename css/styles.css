@@ -3,14 +3,19 @@
     margin: 0;
     box-sizing: border-box;
 }
-header{
-   background-color: #eafcc4;
+
+body{
+    background-color: #eafcc4;
 }
+
+/*comienzo del header*/
 
 .img-banner{
     height: 50vh;
     width: 100vw;
     margin-right: 50px;
+    margin: 5px 5px 5px 5px;
+    border: black solid 2px;
 }
 
 .img-banner2{
@@ -23,6 +28,12 @@ header{
     background-size: 100% 100%;
 
     animation:img-banner2 10s infinite;
+}
+
+.navbar{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: black solid 2px;
 }
 
 @keyframes img-banner2{
@@ -39,10 +50,9 @@ header{
     }
 }
 
-main{
-    background-color: #eafcc4;
+/*fin del header*/
 
-}
+/*comienzo del main*/
 
 nav{
     width: 90%;
@@ -110,13 +120,53 @@ nav ul a:hover{
     border: white solid 2px;
 }
 
-
-footer{
-    background-color: #eafcc4;
+#carouselExampleAutoplaying{
+    border: black solid 2px;
+    margin: 20px;
 }
+
+
+.carrusel-img{
+    width: 1580px;
+    height: 500px; 
+}
+
+/*fin del main*/
+
+/*comienzo del footer*/
 
 .footer-inicio{
     width: 200px;
     height: 200px;
     color: red;
+}
+
+/*final del footer*/
+
+@media (min-width: 481px) and (max-width: 768px){
+    nav{
+        align-items: center;
+    }
+    
+    nav ul {
+    width: 95%;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1279) {
+    nav ul{
+    width: 95%;
+    flex-direction: column;
+    justify-content: space-between;
+    }    
+}
+
+@media screen and (min-width:1280) {
+    nav ul{
+        width: 95%;
+        flex-direction: column;
+        justify-content: space-between;
+        }    
 }
